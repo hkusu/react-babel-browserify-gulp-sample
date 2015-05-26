@@ -1,6 +1,6 @@
 # react-babel-browserify-gulp-sample
 
-これは [React.js](https://facebook.github.io/react/) を学習する環境のサンプルです。特徴は次のとおりです。
+これは [React.js](https://facebook.github.io/react/) を学習する為の環境のサンプルです。特徴は次のとおりです。
 
 - ECMAScript 6 構文のサポートおよび JSX ファイルのコンパイルに [Babel](https://babeljs.io/) を利用
 - モジュールの管理(CommonJS)に [Browserify](http://browserify.org/) を利用
