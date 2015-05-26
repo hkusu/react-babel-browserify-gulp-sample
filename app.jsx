@@ -2,33 +2,31 @@ var React = require('react');
 
 var App = React.createClass({
   getInitialState: function() {
-    return { message: "" };
-  },
-
-  updateMessage: function(message) {
-    this.setState({ message: message })
+    return {
+      person: {
+        name: 'ヤマダ',
+        age: 34
+      },
+      message: 'こんにちわ'
+    };
   },
 
   render: function() {
     return (
       <div>
-        <MessageInput onChange={this.updateMessage} />
+        <Person name={this.state.person.name} age={this.state.person.age} />
         <Message message={this.state.message} />
       </div>
     );
   }
 });
 
-var MessageInput = React.createClass({
-  _onChange: function(e) {
-    this.props.onChange(e.target.value);
-  },
-
+var Person = React.createClass({
   render: function() {
     return (
-      <input type="text"
-             onChange={this._onChange}
-        />
+      <p>
+        {this.props.name} {this.props.age}歳
+      </p>
     );
   }
 });
