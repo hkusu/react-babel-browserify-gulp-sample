@@ -1,5 +1,7 @@
 var React = require('react');
+var Person = require('./person.jsx'); // サブClass（Person）をロード
 
+/* メインClass */
 var App = React.createClass({
   getInitialState: function() {
     return {
@@ -21,16 +23,7 @@ var App = React.createClass({
   }
 });
 
-var Person = React.createClass({
-  render: function() {
-    return (
-      <p>
-        {this.props.name} {this.props.age}歳
-      </p>
-    );
-  }
-});
-
+/* サブClass（Message） */
 var Message = React.createClass({
   render: function() {
     return (
@@ -41,6 +34,8 @@ var Message = React.createClass({
   }
 });
 
+
+// メインClassを描画
 React.render(
   <App />,
   document.getElementById('container')
