@@ -1,0 +1,17 @@
+{
+  "name": "sample",
+  "version": "0.0.1",
+  "devDependencies": {
+    "babelify": "^6.1.1",
+    "browserify": "^10.2.1",
+    "react": "^0.13.3"
+  },
+  "browserify": {
+    "transform": [
+      "babelify"
+    ]
+  },
+  "scripts": {
+    "build": "browserify --debug app.jsx --outfile app.js"
+  }
+}
