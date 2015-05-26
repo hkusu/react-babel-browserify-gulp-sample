@@ -45,5 +45,5 @@ var Message = React.createClass({
 
 React.render(
   <App />,
-  document.getElementById('app-container')
+  document.getElementById('container')
 );

@@ -2,16 +2,14 @@
   "name": "sample",
   "version": "0.0.1",
   "devDependencies": {
-    "babelify": "^6.1.1",
+    "react": "^0.13.3",
     "browserify": "^10.2.1",
-    "react": "^0.13.3"
-  },
-  "browserify": {
-    "transform": [
-      "babelify"
-    ]
+    "babelify": "^6.1.1",
+    "gulp": "^3.8.11",
+    "vinyl-source-stream": "^1.1.0",
+    "gulp-webserver": "^0.9.1"
   },
   "scripts": {
-    "build": "browserify --debug app.jsx --outfile app.js"
+    "build": "browserify --debug --transform babelify app.jsx --outfile bundle.js"
   }
 }
