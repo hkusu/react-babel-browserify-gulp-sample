@@ -31,9 +31,15 @@ $ npm install
 
 gulp のタスクは `gulpfile.js` で定義しています。挙動を変更する場合は適宜このファイルを書き換えてくだささい。
 
-## デモ 
+## サンプル・アプリケーション
 
-http://
+とりあえず簡単なデータバインドを React.js で実装してあります。
+
+![demo](demo.png)
+
+デモは [こちら(GitHub Pages)](http://hkusu.github.io/react-babel-browserify-gulp-sample/) で確認できます。
+
+実装内容については `app.jsx` および `message.jsx` をご覧ください。
 
 ## License
 
