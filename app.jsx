@@ -32,7 +32,7 @@ var App = React.createClass({
   }
 });
 
-// メインClassを描画
+// app クラスを描画
 React.render(
   <App />,
   document.getElementById('container')
