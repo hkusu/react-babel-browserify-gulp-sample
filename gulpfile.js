@@ -27,5 +27,3 @@ gulp.task('webserver', function() {
 });
 
 gulp.task('default', ['browserify', 'watch', 'webserver']);
-
-

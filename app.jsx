@@ -14,7 +14,6 @@ var App = React.createClass({
     };
   },
   handleChange: function(event) {
-    console.log("change");
     this.setState({
       person: {
         name: event.target.value,
