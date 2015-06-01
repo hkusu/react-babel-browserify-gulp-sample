@@ -41,6 +41,10 @@ gulp のタスクは `gulpfile.js` で定義しています。挙動を変更す
 
 実装内容については `app.jsx` および `message.jsx` をご覧ください。
 
+## ほか
+
+詳細については『[React.js + Babel + Browserify + gulp の環境を作ってみた](http://qiita.com/hkusu/items/e068bba0ae036b447754)』に書きました。
+
 ## License
 
 MIT
